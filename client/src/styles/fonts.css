@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "AccentFont";
+  src: url("/fonts/Industry-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MainFont";
+  src: url("/fonts/DolomanPavljenko.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WordsFont";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: "ButtonFont";
+  src: url("/fonts/NTSomic-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

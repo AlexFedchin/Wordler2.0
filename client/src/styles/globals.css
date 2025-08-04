@@ -1,3 +1,18 @@
 @import "tailwindcss";
 
-@config "../../tailwind.config.js"
+@config "../../tailwind.config.js";
+
+/* Apply font-button to all buttons by default */
+@layer base {
+  button {
+    @apply font-button;
+  }
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply font-accent;
+  }
+}
