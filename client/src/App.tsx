@@ -1,20 +1,27 @@
 import { Route, Routes } from "react-router-dom";
 
-import IndexPage from "@/pages/index";
-import DocsPage from "@/pages/docs";
-import PricingPage from "@/pages/pricing";
-import BlogPage from "@/pages/blog";
-import AboutPage from "@/pages/about";
+import HomePage from "@/pages/home";
+import LoginPage from "@/pages/login";
+import SignupPage from "@/pages/signup";
+import PlayPage from "./pages/play";
+import ProfilePage from "./pages/profile";
+import WordListPage from "./pages/word-list";
+import WordListEditPage from "./pages/word-list-edit";
+import DefaultLayout from "./layouts/default";
 
 function App() {
   return (
-    <Routes>
-      <Route element={<IndexPage />} path="/" />
-      <Route element={<DocsPage />} path="/docs" />
-      <Route element={<PricingPage />} path="/pricing" />
-      <Route element={<BlogPage />} path="/blog" />
-      <Route element={<AboutPage />} path="/about" />
-    </Routes>
+    <DefaultLayout>
+      <Routes>
+        <Route element={<HomePage />} path="/" />
+        <Route element={<LoginPage />} path="/login" />
+        <Route element={<SignupPage />} path="/signup" />
+        <Route element={<ProfilePage />} path="/profile" />
+        <Route element={<PlayPage />} path="/play" />
+        <Route element={<WordListPage />} path="/word-list" />
+        <Route element={<WordListEditPage />} path="edit-word-list" />
+      </Routes>
+    </DefaultLayout>
   );
 }
 

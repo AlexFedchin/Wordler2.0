@@ -9,61 +9,34 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Play",
+      href: "/play",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Word List",
+      href: "/word-list",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Edit Word List",
+      href: "/edit-word-list",
     },
-    {
-      label: "About",
-      href: "/about",
-    },
-  ],
-  navMenuItems: [
     {
       label: "Profile",
       href: "/profile",
     },
+  ],
+  navMenuItems: [
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Login",
+      href: "/login",
     },
     {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
+      label: "Signup",
+      href: "/signup",
     },
     {
       label: "Logout",
       href: "/logout",
     },
   ],
-  links: {
-    github: "https://github.com/frontio-ai/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
-  },
 };

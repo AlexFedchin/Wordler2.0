@@ -63,12 +63,24 @@ const colors = {
 const fonts = {
   sans: ['"TextFont"', "sans-serif"],
   heading: ['"AccentFont"', "sans-serif"],
-
   accent: ['"AccentFont"', "sans-serif"],
   text: ['"TextFont"', "sans-serif"],
   words: ['"WordsFont"', "sans-serif"],
   button: ['"ButtonFont"', "sans-serif"],
 };
+
+function createCssVariables(obj, prefix = "--color") {
+  const vars = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === "string") {
+      vars[`${prefix}-${key}`] = value;
+    } else if (typeof value === "object") {
+      const nested = createCssVariables(value, `${prefix}-${key}`);
+      Object.assign(vars, nested);
+    }
+  }
+  return vars;
+}
 
 export default {
   content: [
@@ -92,5 +104,11 @@ export default {
         },
       },
     }),
+    // Plugin to inject CSS variables globally
+    function ({ addBase }) {
+      addBase({
+        ":root": createCssVariables(colors),
+      });
+    },
   ],
 };

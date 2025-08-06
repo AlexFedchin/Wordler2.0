@@ -1,9 +1,8 @@
 import { Button } from "@heroui/react";
-import DefaultLayout from "@/layouts/default";
 
-export default function IndexPage() {
+export default function HomePage() {
   return (
-    <DefaultLayout>
+    <>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <h1 className="text-4xl">AccentFont heading</h1>
         <p className="font-text">DolomanPavljenko text вффдхй äö</p>
@@ -15,6 +14,6 @@ export default function IndexPage() {
         </Button>
         <p>p tag with no font</p>
       </section>
-    </DefaultLayout>
+    </>
   );
 }
